@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import react from 'react';
+import header from './Header';
+import wrapper from './wrapper';
+import card from './card';
+import clicked from "../clicked.json";
+import "./App.css";
 
 function App() {
   return (
