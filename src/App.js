@@ -1,8 +1,8 @@
 import react from 'react';
-import header from './header';
-import wrapper from './wrapper';
-import card from './card';
-import clicked from "../clicked.json";
+import header from './components/header';
+import wrapper from './components/wrapper';
+import card from './components/card';
+import clicked from "./clicked.json";
 import "./App.css";
 
 function App() {
