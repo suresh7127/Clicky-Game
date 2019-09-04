@@ -1,5 +1,5 @@
 import react from 'react';
-import header from './Header';
+import header from './header';
 import wrapper from './wrapper';
 import card from './card';
 import clicked from "../clicked.json";
