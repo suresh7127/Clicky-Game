@@ -42,7 +42,7 @@ class App extends React.Component {
         <header className="App-header">
           <h1 className="App-title">The Clicky Game!</h1>
           <p className="App-intro">
-            Do not to click the same image twice!
+            Click on Images to play the GAME!!!
           </p>
         </header>
         <highscore total={this.state.highscore}
@@ -55,7 +55,7 @@ class App extends React.Component {
               cardsuffle={this.cardsuffle}
               id={character.id}
               key={character.id}
-              image={character.images}
+              images={character.image}
             />
           ))}
         </wrapper>
