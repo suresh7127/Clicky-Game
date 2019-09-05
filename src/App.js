@@ -1,11 +1,11 @@
-import react from 'react';
+import React from 'react';
 import header from './components/header';
 import wrapper from './components/wrapper';
 import card from './components/card';
 import character from "./character.json";
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
 
   state = {
     character,
@@ -36,5 +36,33 @@ class App extends Component {
       })
     }
   }
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">The Clicky Game!</h1>
+          <p className="App-intro">
+            Do not to click the same image twice!
+          </p>
+        </header>
+        <highscore total={this.state.highscore}
+          goal={10}
+          status={this.state.status}
+        />
+        <wrapper>
+          {this.state.character.map(character => (
+            <card
+              cardsuffle={this.cardsuffle}
+              id={character.id}
+              key={character.id}
+              image={character.images}
+            />
+          ))}
+        </wrapper>
 
-  export default App;
+      </div>
+    );
+  }
+}
+
+export default App;
